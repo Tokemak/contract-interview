@@ -1,0 +1,9 @@
+{
+  "filter_paths": "lib|script|test",
+  "solc_remaps": [
+    "ds-test/=lib/forge-std/lib/ds-test/src/",
+    "forge-std/=lib/forge-std/src/",
+    "src/=src/"
+  ],
+  "detectors_to_exclude": "solc-version|naming-convention|calls-loop|msg-value-loop|unused-return"
+}
