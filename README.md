@@ -16,3 +16,4 @@ Provide an implementation of the `src/interfaces/ISpotPriceOracle.sol` interface
 - Must work on 2+ coin pools
 - Is not required to work on meta pools
 - You can assume the requested token, and quote token, are constituents of the pool provided.
+- Please list any assumptions you've made in the contract
