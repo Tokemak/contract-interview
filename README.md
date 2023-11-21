@@ -1,66 +1,18 @@
-## Foundry
+# Contracts Technical Assessment
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Thank you for your interest in Tokemak and for taking the time to perform the technical assessment. Please privately fork the repo and grant access to the designated contact upon your completion. The assessment comes in two parts:
 
-Foundry consists of:
+1.  Find the Bugs
+2.  Implement a Spot Price Oracle
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Find the Bugs - Transmuter
 
-## Documentation
+Review the `src/Transmuter.sol` contract in the `transmuter` branch. Open a PR to `main` and perform your review. Your review should focus on bugs and security/attack issues.
 
-https://book.getfoundry.sh/
+## Spot Price Oracle Implementation
 
-## Usage
+Provide an implementation of the `src/interfaces/ISpotPriceOracle.sol` interface for a Curve StableSwap pool (V1):
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- Must work on 2+ coin pools
+- Is not required to work on meta pools
+- You can assume the requested token, and quote token, are constituents of the pool provided.
