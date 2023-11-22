@@ -14,6 +14,6 @@ Review the `src/Transmuter.sol` contract in the `transmuter` branch. Open a PR t
 Provide an implementation of the `src/interfaces/ISpotPriceOracle.sol` interface for a Curve StableSwap pool (V1):
 
 - Must work on 2+ coin pools
-- Is not required to work on meta pools
+- Is not required to work on meta, lending, or -ng pools
 - You can assume the requested token, and quote token, are constituents of the pool provided.
 - Please list any assumptions you've made in the contract
